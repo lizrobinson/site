@@ -1,0 +1,255 @@
+
+
+
+.container {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:100px;
+	}
+	
+.inner-container {
+	width: 90%;
+	
+	position: absolute;
+	}
+/* needed to keep AP divs within container relative to container edge */
+	
+.column_left {
+	width: 48.571428571429%; /* 340 / 700 */
+	float: left;
+	margin-right: 2.857142857143%; /* 20 / 700 */
+	}
+	
+.column_right {
+	width: 48.571428571429%; /* 340 / 700 */ 
+	float: left;
+	}
+	
+body {
+	margin: 0; 
+	padding: 0;
+	background-color: #ffffff;
+
+	font-size: 12px;
+	line-height: 18px;
+	font-family: verdana, sans-serif;
+	text-decoration: none;
+	color: #000000;
+	}
+
+/* ------------------------------------------------------------------ */
+
+
+a:link {
+	font: 12px/18px verdana, sans-serif;
+	text-decoration: none; 
+	color: #b4b4b4;
+	}
+	
+a:visited {
+	font: 12px/18px verdana, sans-serif; 
+	text-decoration: none; 
+	color: #b4b4b4;
+	}
+
+a:hover {
+	font: 12px/18px verdana, sans-serif;
+	text-decoration: none;
+	color: #f9a400;
+	}
+	
+a:active {
+	font: 12px/18px verdana, sans-serif;
+	text-decoration: none; 
+	color: #ffffff;
+	}
+
+
+#menu { 
+	font-size: 22pt;
+	font-style: normal; 
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1px;
+	z-index: 100px;
+	padding: 30px;
+	margin-bottom: 50px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto 
+	}
+	
+#menu a{ 
+	font-size: 20pt;
+	font-style: normal; 
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1px;
+	z-index: 100px;
+	padding: 30px;
+	margin-bottom: 50px;
+	}
+	
+#menu a hover{ 
+	font-size: 20pt;
+	font-style: normal; 
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1px;
+	z-index: 100px;
+	padding: 30px;
+	margin-bottom: 50px;
+	}
+	
+@media screen and (min-width: 1200px) {
+#menu { 
+	font-size: 24pt;
+	font-style: normal; 
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1px;
+	z-index: 100px;
+	padding: 30px;
+	margin-bottom: 50px;
+	
+	}
+	
+#menu a{ 
+	font-size: 24pt;
+	font-style: normal; 
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1px;
+	z-index: 100px;
+	padding: 30px;
+	margin-bottom: 50px;
+	}
+	
+#menu a hover{ 
+	font-size: 24pt;
+	font-style: normal; 
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1px;
+	z-index: 100px;
+	padding: 30px;
+	margin-bottom: 50px;
+	}
+}
+
+
+@media screen and (max-width: 760px) {
+	#menu { 
+	font-size: 16pt;
+	font-style: normal; 
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1px;
+	z-index: 100px;
+	padding: 30px;
+	margin-bottom: 50px;
+	
+	}
+	
+#menu a{ 
+	font-size: 16pt;
+	font-style: normal; 
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1px;
+	z-index: 100px;
+	padding: 30px;
+	margin-bottom: 50px;
+	}
+	
+#menu a hover{ 
+	font-size: 22pt;
+	font-style: normal; 
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1px;
+	z-index: 100px;
+	padding: 30px;
+	margin-bottom: 50px;
+	}
+}
+
+
+h1 { 
+	font-size: 1.5em;
+	font-style: normal; 
+	font-weight: normal;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 4px;
+	color: #000000;
+	z-index: 100px;
+	text-align: center;
+	}
+	
+h1 a{ 
+	font-size: 1.5em;
+	font-style: normal; 
+	font-weight: normal;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 4px;
+	color: #000000;
+	z-index: 100px;
+	text-align: center;
+	margin-bottom: 50px;
+	}
+	
+h2 { 
+	font-size: 1.2em;
+	font-style: normal; 
+	font-weight: normal;
+	font-family: 'Roboto', sans-serif;
+	line-height: 20px;
+	color: #000000;
+	z-index: 100px;
+	text-align: center;
+	margin-bottom: 50px;
+	}
+	
+h2 a{ 
+	font-size: 1.2em;
+	font-style: normal; 
+	font-weight: normal;
+	font-family: 'Roboto', sans-serif;
+	line-height: 20px;
+	letter-spacing: 1px;
+	color: #000000;
+	z-index: 100px;
+	text-align: center;
+	margin-bottom: 50px;
+	}
+	
+
+
+img {
+	max-width: 100%;
+	}
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+    
+    
+ul {
+    float: left;
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+    line-height: 0.5;
+}
+
+li {
+   display: inline-block;
+}
+
+    
+/* ------------------------------------------------------------------ */
+/* needed to keep AP divs within container relative to edge of container */
+
