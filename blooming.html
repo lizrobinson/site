@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+
+<!-- NOTE: This is a liquid REVISION OF THE index4.html template. -->
+
+<html>
+
+<head>
+<title>LIZ ROBINSON</title>
+<script src="prefixfree.min.js"></script>
+
+<link href="path/to/lightbox.css" rel="stylesheet">
+<!-- ============================================================== -->
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="description" content="an ambient immersive library of dreams, better experienced than explained." />
+<meta name="keywords" content="curt cloninger, dream library, experimental web art, surrealistic experience, library of dreams, memory warp" />
+<!-- ============================================================== -->
+
+<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+<!-- NECESSARY! tells phones and pads that your responsive layout is supposed to be as wide as it actually is. Without this, the device's browser assumes your layout is non-responsive and meant to be viewed at 980px-wide, and it will take your 480px-wide layout and shrink it down for you (which you don't want, since you already shrunk it). -->
+
+<link rel="stylesheet" type="text/css" href="reset.css" />
+
+<link rel="stylesheet" type="text/css" href="template.css" />
+
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+
+<!-- <link rel="stylesheet" href="wide.css" media="screen and (min-width: 1024px)" /> --> 
+<!-- could have separate style sheets per break point, but this is less efficient than @media within a single CSS file because separate style sheets require multiple calls to server -->
+
+
+
+<style type="text/css">
+
+
+
+
+.container {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:100px;
+	}
+	
+.inner-container {
+	width: 90%;
+	
+	position: absolute;
+	}
+/* needed to keep AP divs within container relative to container edge */
+	
+.column_left {
+	width: 48.571428571429%; /* 340 / 700 */
+	float: left;
+	margin-right: 2.857142857143%; /* 20 / 700 */
+	}
+	
+.column_right {
+	width: 48.571428571429%; /* 340 / 700 */ 
+	float: left;
+	}
+	
+body {
+	margin: 0; 
+	padding: 0;
+	background-color: #ffffff;
+
+	font-size: 12px;
+	line-height: 18px;
+	font-family: verdana, sans-serif;
+	text-decoration: none;
+	color: #000000;
+	}
+
+/* ------------------------------------------------------------------ */
+
+
+a:link {
+	font: 12px/18px verdana, sans-serif;
+	text-decoration: none; 
+	color: #b4b4b4;
+	}
+	
+a:visited {
+	font: 12px/18px verdana, sans-serif; 
+	text-decoration: none; 
+	color: #b4b4b4;
+	}
+
+a:hover {
+	font: 12px/18px verdana, sans-serif;
+	text-decoration: none;
+	color: #f9a400;
+	}
+	
+a:active {
+	font: 12px/18px verdana, sans-serif;
+	text-decoration: none; 
+	color: #ffffff;
+	}
+	
+	
+#menu { 
+	font-size: 22pt;
+	font-style: normal; 
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1px;
+	z-index: 100px;
+	padding: 30px;
+	margin-bottom: 50px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto 
+	}
+	
+#menu a{ 
+	font-size: 20pt;
+	font-style: normal; 
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1px;
+	z-index: 100px;
+	padding: 30px;
+	margin-bottom: 50px;
+	}
+	
+#menu a hover{ 
+	font-size: 20pt;
+	font-style: normal; 
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1px;
+	z-index: 100px;
+	padding: 30px;
+	margin-bottom: 50px;
+	}
+	
+@media screen and (min-width: 1200px) {
+#menu { 
+	font-size: 24pt;
+	font-style: normal; 
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1px;
+	z-index: 100px;
+	padding: 30px;
+	margin-bottom: 50px;
+	
+	}
+	
+#menu a{ 
+	font-size: 24pt;
+	font-style: normal; 
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1px;
+	z-index: 100px;
+	padding: 30px;
+	margin-bottom: 50px;
+	}
+	
+#menu a hover{ 
+	font-size: 24pt;
+	font-style: normal; 
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1px;
+	z-index: 100px;
+	padding: 30px;
+	margin-bottom: 50px;
+	}
+}
+
+
+@media screen and (max-width: 760px) {
+	#menu { 
+	font-size: 16pt;
+	font-style: normal; 
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1px;
+	z-index: 100px;
+	padding: 30px;
+	margin-bottom: 50px;
+	
+	}
+	
+#menu a{ 
+	font-size: 16pt;
+	font-style: normal; 
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1px;
+	z-index: 100px;
+	padding: 30px;
+	margin-bottom: 50px;
+	}
+	
+#menu a hover{ 
+	font-size: 22pt;
+	font-style: normal; 
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1px;
+	z-index: 100px;
+	padding: 30px;
+	margin-bottom: 50px;
+	}
+}
+
+h1 { 
+	font-size: 1.5em;
+	font-style: normal; 
+	font-weight: normal;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 4px;
+	color: #000000;
+	z-index: 100px;
+	text-align: center;
+	}
+	
+h1 a{ 
+	font-size: 1.5em;
+	font-style: normal; 
+	font-weight: normal;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 4px;
+	color: #000000;
+	z-index: 100px;
+	text-align: center;
+	margin-bottom: 50px;
+	}
+	
+h2 { 
+	font-size: 1.2em;
+	font-style: normal; 
+	font-weight: normal;
+	font-family: 'Roboto', sans-serif;
+	line-height: 20px;
+	color: #000000;
+	z-index: 100px;
+	text-align: center;
+	margin: 60px;
+	}
+	
+h2 a{ 
+	font-size: 1.2em;
+	font-style: normal; 
+	font-weight: normal;
+	font-family: 'Roboto', sans-serif;
+	line-height: 20px;
+	letter-spacing: 1px;
+	color: #000000;
+	z-index: 100px;
+	text-align: center;
+	margin: 60px;
+	}
+	
+
+
+img {
+	max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+    
+.video {
+	width: 700px;
+	height: 400px;
+    margin: 0 auto;}
+    
+ul {
+    float: left;
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+    list-style-type: none;
+    text-align: center;
+    line-height: 0.5;
+}
+
+li {
+   display: inline-block;
+}
+
+    
+/* ------------------------------------------------------------------ */
+/* needed to keep AP divs within container relative to edge of container */
+
+</style>
+
+
+<base target="_top" />
+<link rel="stylesheet" type="text/css" href="template.css" />
+</head>
+
+<body>
+
+<div class="container">
+	<p>
+<a href="index.html">
+<img src="logogrey.png" width="200px"></p>
+<h1>LIZ ROBINSON</h1></a>
+	
+<div class="inner-container">
+
+<p>
+<div id="menu">
+<ul>
+<li><a href="web.html">WEB</a></li>
+<li><a href="print.html">PRINT</a></li>
+<li><a href="video.html">VIDEO</a></li>
+<li><a href="animation.html">ANIMATION</a></li>
+</ul>
+</div>
+</p>
+
+<p>
+	
+
+<h2>Hand-drawn Illustrator and Flash Animation</h2>
+
+<div class="video"><iframe width="700" height="400" src="https://www.youtube.com/embed/NvDc3kE_UOA" frameborder="0" allowfullscreen></iframe>
+    </div>
+</p>
+
+<p>
+<h2>
+&copy; Liz Robinson
+<br>
+(704) 778-2517
+<br>
+erobins3@unca.edu
+</h2>	
+</p>
+
+</div>
+</div>
+
+<script src="path/to/lightbox.js"></script>
+
+</body>
+</html>
